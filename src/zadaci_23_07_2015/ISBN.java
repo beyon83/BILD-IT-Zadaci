@@ -34,7 +34,7 @@ public class ISBN {
 		/** Insert 9 numbers in an array */
 		for(int i = 0; i < 9; i++) {
 			array[i] = input.nextInt();
-			/** Shorter for checksum */
+			/** Shorter formula for checksum */
 			formula += array[i] * (i + 1);
 		}
 			formula = formula % 11;
