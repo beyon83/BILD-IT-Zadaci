@@ -34,12 +34,13 @@ public class ISBN {
 		/** Insert 9 numbers in an array */
 		for(int i = 0; i < 9; i++) {
 			array[i] = input.nextInt();
-		//	formula += array[i] * i; // Missing something to get this formula done in the shorter way
+			/** Shorter for checksum */
+			formula += array[i] * (i + 1);
 		}
-		//	formula = formula % 11;
+			formula = formula % 11;
 		
 		/** Formula for getting checksum */
-		formula = (array[0] * 1 + array[1] * 2 + array[2] * 3 + array[3] * 4 + array[4] * 5 + array[5] * 6 + array[6] * 7 + array[7] * 8 + array[8] * 9) % 11;
+	//	formula = (array[0] * 1 + array[1] * 2 + array[2] * 3 + array[3] * 4 + array[4] * 5 + array[5] * 6 + array[6] * 7 + array[7] * 8 + array[8] * 9) % 11;
 		
 		/** Print array of numbers */
 		for(int i = 0; i < array.length; i++) {
